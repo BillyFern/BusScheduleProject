@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #FE8900; /* Warna latar belakang utama */
+    color: #333; /* Warna teks utama */
+}
+.header {
+    background-color: #333; /* Warna latar header */
+    color: #fff; /* Warna teks header */
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.date {
+    text-align: right;
+    padding: 5px 5px;
+}
+h1 {
+    margin-top: 0;
+    font-size: 2em;
+}
+.schedule {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 24px;
+}
+th {
+    background-color: #FE8900; /* Warna header kolom */
+    color: #fff;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Warna latar belakang baris genap */
+}
+.route {
+    background-color: #333; /* Warna latar judul rute */
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.slideshow-container {
+    max-width: 45%;
+    position: relative;
+    margin: 10px;
+    border: 5px solid #fff; /* Menambahkan border putih di sekitar slideshow */
+    border-radius: 10px; /* Menambahkan border-radius */
+    overflow: hidden; /* Menghilangkan overflow */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Menambahkan bayangan */
+    display: inline-block; /* Membuat slideshow sejajar */
+    vertical-align: top; /* Membuat slideshow sejajar */
+}
+.mySlides {
+    display: none;
+}
+img {
+    vertical-align: middle;
+    width: 100%; /* Menyesuaikan gambar dengan lebar slideshow */
+    max-height: 400px; /* Menentukan tinggi maksimum untuk gambar */
+    object-fit: cover; /* Memastikan gambar proporsional dan dipotong jika diperlukan */
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot-container {
+    text-align: center;
+    padding: 2px;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active {
+    background-color: #717171;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
